@@ -1,15 +1,1 @@
-(function(document) {
-  var toggle = document.querySelector('.sidebar-toggle');
-  var sidebar = document.querySelector('#sidebar');
-  var checkbox = document.querySelector('#sidebar-checkbox');
-
-  document.addEventListener('click', function(e) {
-    var target = e.target;
-
-    if(!checkbox.checked ||
-       sidebar.contains(target) ||
-       (target === checkbox || target === toggle)) return;
-
-    checkbox.checked = false;
-  }, false);
-})(document);
+!function(e){var c=e.querySelector(".sidebar-toggle"),r=e.querySelector("#sidebar"),t=e.querySelector("#sidebar-checkbox");e.addEventListener("click",function(e){var n=e.target;t.checked&&!r.contains(n)&&n!==t&&n!==c&&(t.checked=!1)},!1)}(document);
